@@ -11,10 +11,18 @@ public class WhoLikesItTest
     }
 
     [Test]
+    public void Should_Return_No_One_Likes_This()
+    {
+        List<string> data = new List<string>();
+        var act = _sut.Likes(data);
+        Assert.That(act, Does.StartWith("likes this"), "no one`");
+    }
+
+    [Test]
     public void Should_Return_End_With_Likes_this()
     {
         List<string> data = new List<string>();
-        var act =  _sut.Likes(data);
-        Assert.That( act, Does.EndWith("likes this"), "End string should be `likes this`");
+        var act = _sut.Likes(data);
+        Assert.That(act, Does.EndWith("likes this"), "End string should be `likes this`");
     }
 }
