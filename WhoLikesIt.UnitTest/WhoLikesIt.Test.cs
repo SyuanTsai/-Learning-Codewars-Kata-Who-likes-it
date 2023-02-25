@@ -11,7 +11,7 @@ public class WhoLikesItTest
     }
 
     [Test]
-    public void Test1()
+    public void Should_Return_End_With_Likes_this()
     {
         List<string> data = new List<string>();
         var act =  _sut.Likes(data);
