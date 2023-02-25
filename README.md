@@ -1,1 +1,1 @@
-# -Learning-Codewars-Kata-Who-likes-it
+# Learning-Codewars-Kata-Who-likes-it
