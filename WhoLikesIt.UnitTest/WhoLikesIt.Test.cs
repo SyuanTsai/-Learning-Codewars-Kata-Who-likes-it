@@ -10,5 +10,8 @@ public class WhoLikesItTest
     [Test]
     public void Test1()
     {
+        var sut = new WhoLikesIt();
+        List<string> data = new List<string>();
+        sut.Likes(data);
     }
 }
