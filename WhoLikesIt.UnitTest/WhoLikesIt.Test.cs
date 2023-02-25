@@ -15,7 +15,7 @@ public class WhoLikesItTest
     {
         List<string> data = new List<string>();
         var act = _sut.Likes(data);
-        Assert.That(act, Does.StartWith("likes this"), "no one`");
+        Assert.That(act, Does.StartWith("no one"), "Start string should be `no one`");
     }
 
     [Test]
